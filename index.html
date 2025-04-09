@@ -8,25 +8,25 @@
   <script src="index.js"></script>
  
 </head>
-<header>
-    <h1>Consulta Tabela Fipe</h1>
-    <p>Veja o valor de veículos sem precisar de e-mail ou nome</p>
-  </header>
 
-  <div class="container">
-    <div class="form-group">
-      <label for="marca">Marca</label>
-      <select id="marca"></select>
-    </div>
-    <div class="form-group">
-      <label for="modelo">Modelo</label>
-      <select id="modelo"></select>
-    </div>
-    <div class="form-group">
-      <label for="ano">Ano</label>
-      <select id="ano"></select>
-    </div>
-    <button onclick="consultarFipe()">Consultar</button>
-
-    <div class="resultado" id="resultado"></div>
+<body>
+  <div class="fipe-container">
+    <h2>Consulta Tabela FIPE</h2>
+    <select id="tipoVeiculo">
+      <option value="carros">Carros</option>
+      <option value="motos">Motos</option>
+      <option value="caminhoes">Caminhões</option>
+    </select>
+    <select id="marca" disabled>
+      <option>Selecione a marca</option>
+    </select>
+    <select id="modelo" disabled>
+      <option>Selecione o modelo</option>
+    </select>
+    <select id="ano" disabled>
+      <option>Selecione o ano</option>
+    </select>
+    <button id="buscar" disabled>Buscar Preço</button>
+    <div id="resultado"></div>
+    <div id="imagem"></div>
   </div>
