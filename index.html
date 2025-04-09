@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta Tabela FIPE</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+ 
+</head>
+<body>
+  <div class="fipe-container">
+    <h2>Consulta Tabela FIPE</h2>
+    <select id="tipoVeiculo">
+      <option value="carros">Carros</option>
+      <option value="motos">Motos</option>
+      <option value="caminhoes">Caminhões</option>
+    </select>
+    <select id="marca" disabled>
+      <option>Selecione a marca</option>
+    </select>
+    <select id="modelo" disabled>
+      <option>Selecione o modelo</option>
+    </select>
+    <select id="ano" disabled>
+      <option>Selecione o ano</option>
+    </select>
+    <button id="buscar" disabled>Buscar Preço</button>
+    <div id="resultado"></div>
+    <div id="imagem"></div>
+  </div>
+
+  
+</body>
+</html>
